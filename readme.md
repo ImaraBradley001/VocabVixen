@@ -20,7 +20,7 @@
 * To install from this git repository, run the following commands
 ```
 git clone https://github.com/ImaraBradley001/VocabVixen.git
-cd Vocab Vixen
+cd VocabVixen
 pip install -r requirements.txt
 ```
 * Or simply download the latest release binary
