@@ -1,0 +1,35 @@
+<Controller>:
+    layout_content: layout_content
+    BoxLayout:
+        id: bl
+        orientation: 'vertical'
+        padding: 10, 10
+        row_default_height: '40dp'
+        row_force_default: True
+        spacing: 10, 10
+        GridLayout:
+            cols:1
+            size_hint_y: None
+            width: 20
+            Label:
+                markup:True
+                text:"[i][b]Welcome To Vocab Vixen[/b][/i]"
+                font_size:20
+            TextInput:
+                id:word
+                multiline:False
+                text:"Search for a word"
+            Button:
+                text:"Submit"
+                on_press:root.get_meaning()
+
+        ScrollView:
+            size: self.size
+            GridLayout:
+                id: layout_content
+                size_hint_y: None
+                cols: 1
+                row_default_height: '170dp'
+                #row_force_default: True
+                spacing: 0, 0
+                padding: 0, 0
